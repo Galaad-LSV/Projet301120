@@ -21,8 +21,8 @@ namespace projet301120.Models
             _id = id;
             _nom = nom;
             _prix = prix;
-            CollClassePizza.Add(this);
             _lesIngredients = new List<Composant>();
+            CollClassePizza.Add(this);
         }
         #endregion
         #region Getters-Setteurs
