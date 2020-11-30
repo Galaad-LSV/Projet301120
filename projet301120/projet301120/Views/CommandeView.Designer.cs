@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnRetour = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVListePizza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVIngredients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGVCommande)).BeginInit();
@@ -50,9 +51,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(291, 23);
+            this.label1.Location = new System.Drawing.Point(218, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 38);
+            this.label1.Size = new System.Drawing.Size(161, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Commande";
             // 
@@ -60,26 +62,29 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(329, 103);
+            this.label4.Location = new System.Drawing.Point(247, 84);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 29);
+            this.label4.Size = new System.Drawing.Size(30, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Id:";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(374, 110);
+            this.txtId.Location = new System.Drawing.Point(280, 89);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 22);
+            this.txtId.Size = new System.Drawing.Size(76, 20);
             this.txtId.TabIndex = 4;
             // 
             // checkSurPlace
             // 
             this.checkSurPlace.AutoSize = true;
             this.checkSurPlace.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkSurPlace.Location = new System.Drawing.Point(110, 89);
+            this.checkSurPlace.Location = new System.Drawing.Point(82, 72);
+            this.checkSurPlace.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkSurPlace.Name = "checkSurPlace";
-            this.checkSurPlace.Size = new System.Drawing.Size(139, 33);
+            this.checkSurPlace.Size = new System.Drawing.Size(110, 28);
             this.checkSurPlace.TabIndex = 5;
             this.checkSurPlace.Text = "Sur Place";
             this.checkSurPlace.UseVisualStyleBackColor = true;
@@ -88,9 +93,10 @@
             // 
             this.checkEmporter.AutoSize = true;
             this.checkEmporter.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkEmporter.Location = new System.Drawing.Point(110, 130);
+            this.checkEmporter.Location = new System.Drawing.Point(82, 106);
+            this.checkEmporter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkEmporter.Name = "checkEmporter";
-            this.checkEmporter.Size = new System.Drawing.Size(135, 33);
+            this.checkEmporter.Size = new System.Drawing.Size(107, 28);
             this.checkEmporter.TabIndex = 6;
             this.checkEmporter.Text = "Emporter";
             this.checkEmporter.UseVisualStyleBackColor = true;
@@ -98,47 +104,53 @@
             // DGVListePizza
             // 
             this.DGVListePizza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVListePizza.Location = new System.Drawing.Point(41, 236);
+            this.DGVListePizza.Location = new System.Drawing.Point(31, 192);
+            this.DGVListePizza.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DGVListePizza.Name = "DGVListePizza";
             this.DGVListePizza.RowHeadersWidth = 51;
             this.DGVListePizza.RowTemplate.Height = 24;
-            this.DGVListePizza.Size = new System.Drawing.Size(332, 164);
+            this.DGVListePizza.Size = new System.Drawing.Size(249, 133);
             this.DGVListePizza.TabIndex = 7;
+            this.DGVListePizza.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVListePizza_CellContentClick);
             // 
             // DGVIngredients
             // 
             this.DGVIngredients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVIngredients.Location = new System.Drawing.Point(389, 236);
+            this.DGVIngredients.Location = new System.Drawing.Point(292, 192);
+            this.DGVIngredients.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DGVIngredients.Name = "DGVIngredients";
             this.DGVIngredients.RowHeadersWidth = 51;
             this.DGVIngredients.RowTemplate.Height = 24;
-            this.DGVIngredients.Size = new System.Drawing.Size(320, 164);
+            this.DGVIngredients.Size = new System.Drawing.Size(240, 133);
             this.DGVIngredients.TabIndex = 8;
             // 
             // DGVCommande
             // 
             this.DGVCommande.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVCommande.Location = new System.Drawing.Point(151, 436);
+            this.DGVCommande.Location = new System.Drawing.Point(113, 354);
+            this.DGVCommande.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DGVCommande.Name = "DGVCommande";
             this.DGVCommande.RowHeadersWidth = 51;
             this.DGVCommande.RowTemplate.Height = 24;
-            this.DGVCommande.Size = new System.Drawing.Size(485, 85);
+            this.DGVCommande.Size = new System.Drawing.Size(364, 69);
             this.DGVCommande.TabIndex = 9;
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(492, 557);
+            this.txtTotal.Location = new System.Drawing.Point(369, 453);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(100, 22);
+            this.txtTotal.Size = new System.Drawing.Size(76, 20);
             this.txtTotal.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(406, 550);
+            this.label2.Location = new System.Drawing.Point(304, 447);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 29);
+            this.label2.Size = new System.Drawing.Size(61, 24);
             this.label2.TabIndex = 11;
             this.label2.Text = "Total :";
             // 
@@ -146,9 +158,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(105, 204);
+            this.label3.Location = new System.Drawing.Point(79, 166);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 29);
+            this.label3.Size = new System.Drawing.Size(142, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "Liste des Pizzas";
             // 
@@ -156,9 +169,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(485, 204);
+            this.label5.Location = new System.Drawing.Point(364, 166);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(133, 29);
+            this.label5.Size = new System.Drawing.Size(103, 24);
             this.label5.TabIndex = 13;
             this.label5.Text = "Ingrédients";
             // 
@@ -166,17 +180,29 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1, 451);
+            this.label6.Location = new System.Drawing.Point(1, 366);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 58);
+            this.label6.Size = new System.Drawing.Size(106, 48);
             this.label6.TabIndex = 14;
             this.label6.Text = "    Pizza \r\ncommandé\r\n";
             // 
+            // btnRetour
+            // 
+            this.btnRetour.Location = new System.Drawing.Point(477, 23);
+            this.btnRetour.Name = "btnRetour";
+            this.btnRetour.Size = new System.Drawing.Size(54, 26);
+            this.btnRetour.TabIndex = 15;
+            this.btnRetour.Text = "Retour";
+            this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
+            // 
             // CommandeView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 606);
+            this.ClientSize = new System.Drawing.Size(562, 492);
+            this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -190,7 +216,6 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CommandeView";
             this.Text = "Commandes";
             this.Load += new System.EventHandler(this.CommandeView_Load);
@@ -217,5 +242,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnRetour;
     }
 }

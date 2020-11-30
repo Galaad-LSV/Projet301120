@@ -52,6 +52,7 @@
     <Compile Include="Models\Emporter.cs" />
     <Compile Include="Models\Pizza.cs" />
     <Compile Include="Models\SurPlace.cs" />
+    <Compile Include="Utilistaires\GestionId.cs" />
     <Compile Include="Views\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,8 +95,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utilistaires\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
