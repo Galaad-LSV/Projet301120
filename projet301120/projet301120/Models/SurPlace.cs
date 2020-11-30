@@ -9,6 +9,7 @@ namespace projet301120.Models
     public class SurPlace
     {
         #region Attributs
+
         #endregion
         #region Constructeurs
         #endregion

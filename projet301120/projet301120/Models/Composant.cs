@@ -22,6 +22,7 @@ namespace projet301120.Models
             _nomIngredients = nomIngredients;
             _quantite = quantite;
             _prix = prix;
+            CollClasseComposant.Add(this);
         }
         #endregion
         #region Getters-Setteurs
