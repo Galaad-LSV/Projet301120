@@ -52,7 +52,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(291, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 39);
+            this.label1.Size = new System.Drawing.Size(193, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Commande";
             // 
@@ -166,7 +166,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 450);
+            this.label6.Location = new System.Drawing.Point(1, 451);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 58);
             this.label6.TabIndex = 14;
@@ -190,7 +190,7 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CommandeView";
             this.Text = "Commandes";
             this.Load += new System.EventHandler(this.CommandeView_Load);

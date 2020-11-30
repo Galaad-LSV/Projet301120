@@ -66,6 +66,7 @@
             this.cboId.Name = "cboId";
             this.cboId.Size = new System.Drawing.Size(121, 24);
             this.cboId.TabIndex = 2;
+            this.cboId.SelectedIndexChanged += new System.EventHandler(this.cboId_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -115,6 +116,7 @@
             this.btnCommande.TabIndex = 9;
             this.btnCommande.Text = "Commande";
             this.btnCommande.UseVisualStyleBackColor = true;
+            this.btnCommande.Click += new System.EventHandler(this.btnCommande_Click);
             // 
             // label4
             // 

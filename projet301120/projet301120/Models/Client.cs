@@ -32,6 +32,10 @@ namespace projet301120.Models
         #endregion
 
         #region Methodes
+        public string GetNom() 
+        { 
+            return _nom; 
+        }
         #endregion
 
 
