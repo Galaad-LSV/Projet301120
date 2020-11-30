@@ -78,6 +78,14 @@ namespace projet301120
                     txtNom.Text = unClient.GetNom();                   
                 }
             }
+
+
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Pizza", typeof(string));            
+            DGVAcheter.Refresh();
+            
+            
+
         }
 
         private void btnCommande_Click(object sender, EventArgs e)
@@ -85,6 +93,11 @@ namespace projet301120
             CommandeView from1 = new CommandeView();
             from1.Show();
             this.Hide();
+        }
+
+        private void btnCreer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
