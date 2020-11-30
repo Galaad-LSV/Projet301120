@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ClientCreerViews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ClientCreerViews.Designer.cs">
+      <DependentUpon>ClientCreerViews.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\CommandeView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <EmbeddedResource Include="Views\Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ClientCreerViews.resx">
+      <DependentUpon>ClientCreerViews.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CommandeView.resx">
       <DependentUpon>CommandeView.cs</DependentUpon>

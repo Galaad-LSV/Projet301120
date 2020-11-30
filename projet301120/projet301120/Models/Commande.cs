@@ -12,7 +12,7 @@ namespace projet301120.Models
         public static List<Commande> collClasseCommande = new List<Commande>();
         private int _id;
         private string _date;
-        private Dictionary<Pizza, int> _lesPizzas;
+        private Dictionary<Pizza, string> _lesPizzas;
         private Client _leClient;
         #endregion
 
@@ -23,7 +23,7 @@ namespace projet301120.Models
             _date = date;
             _leClient = leclient;
             Commande.collClasseCommande.Add(this);
-            _lesPizzas = new Dictionary<Pizza, int>();
+            _lesPizzas = new Dictionary<Pizza, string>();
         }
 
 
@@ -33,7 +33,7 @@ namespace projet301120.Models
         public int Id { get => _id; set => _id = value; }
         public string Date { get => _date; set => _date = value; }
         public Client LeClient { get => _leClient; set => _leClient = value; }
-        public Dictionary<Pizza, int> LigneCommande { get => _lesPizzas; set => _lesPizzas = value; }
+        public Dictionary<Pizza, string> LesPizzas { get => _lesPizzas; set => _lesPizzas = value; }
         #endregion
 
         #region Methodes

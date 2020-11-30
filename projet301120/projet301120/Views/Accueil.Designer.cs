@@ -96,6 +96,7 @@
             this.btnCreer.TabIndex = 5;
             this.btnCreer.Text = "Créer";
             this.btnCreer.UseVisualStyleBackColor = true;
+            this.btnCreer.Click += new System.EventHandler(this.btnCreer_Click);
             // 
             // DGVAcheter
             // 
