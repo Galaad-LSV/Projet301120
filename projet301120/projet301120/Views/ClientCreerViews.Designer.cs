@@ -94,6 +94,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ClientCreerViews";
             this.Text = "ClientCreerViews";
+            this.Load += new System.EventHandler(this.ClientCreerViews_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

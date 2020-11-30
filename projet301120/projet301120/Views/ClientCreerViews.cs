@@ -30,5 +30,10 @@ namespace projet301120.Views
             from1.Show();
             this.Hide();
         }
+
+        private void ClientCreerViews_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

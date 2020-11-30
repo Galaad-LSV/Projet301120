@@ -115,7 +115,7 @@
             this.btnCommande.Name = "btnCommande";
             this.btnCommande.Size = new System.Drawing.Size(312, 49);
             this.btnCommande.TabIndex = 9;
-            this.btnCommande.Text = "Commande";
+            this.btnCommande.Text = "Nouvelle Commande";
             this.btnCommande.UseVisualStyleBackColor = true;
             this.btnCommande.Click += new System.EventHandler(this.btnCommande_Click);
             // 
@@ -125,9 +125,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(145, 292);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 32);
+            this.label4.Size = new System.Drawing.Size(228, 32);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Pizza achetées";
+            this.label4.Text = "Les Commandes";
             // 
             // btnModifier
             // 

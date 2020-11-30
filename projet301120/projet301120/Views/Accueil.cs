@@ -21,7 +21,11 @@ namespace projet301120
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            label4.Hide();
+            btnCreer.Hide();
+            btnModifier.Hide();
+            btnSupprimer.Hide();
+            DGVAcheter.Hide();
 
             cboId.Refresh();
 
@@ -42,13 +46,42 @@ namespace projet301120
                 }
             }
 
+            this.DGVCommande(this.GetClient(txtNom.Text));
 
+            label4.Show();
+            btnSupprimer.Show();
+            btnModifier.Show();
+            btnCreer.Show();
+            DGVAcheter.Show();
+        }
+        public Client GetClient(string param)
+        {
+            Client lescommandes = null;
+
+            foreach (Client unClient in Client.collClasseClient)
+            {
+                if (unClient.Nom == param)
+                {
+                    lescommandes = unClient;                   
+                }
+            }
+            return lescommandes;
+        }
+
+        private void DGVCommande(Client param)
+        {
             DataTable dt = new DataTable();
-            dt.Columns.Add("Pizza", typeof(string));            
-            DGVAcheter.Refresh();
-            
-            
 
+            dt.Columns.Add("Id", typeof(int));
+            dt.Columns.Add("Date", typeof(string));
+
+
+            foreach (Commande uneCommande in param.LesCommandes)
+            {
+                dt.Rows.Add(uneCommande.Id, uneCommande.Date);
+            }
+
+            DGVAcheter.DataSource = dt;
         }
 
         private void btnCommande_Click(object sender, EventArgs e)
