@@ -36,6 +36,22 @@ namespace projet301120.Models
         { 
             return _nom; 
         }
+        public static Client ClientAvecId(int id)
+        {
+            foreach(Client unClient in Client.collClasseClient)
+            {
+                if(unClient.Id == id)
+                {
+                    return unClient;
+                }
+            }
+            return null;
+        }
+
+        public static void SupprimerClient(int leId)
+        {
+            collClasseClient.Remove(ClientAvecId(leId));
+        }
         #endregion
 
 

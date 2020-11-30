@@ -64,5 +64,39 @@ namespace projet301120
             from1.Show();
             this.Hide();
         }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            foreach (Client unClient in Client.collClasseClient)
+            {
+                if (unClient.Id.ToString() == cboId.Text)
+                {
+                       unClient.Nom = txtNom.Text;
+                }
+            }
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            if(Client.ClientAvecId(int.Parse(cboId.Text)).LesCommandes.Count()==0)
+            {
+                Client.SupprimerClient(int.Parse(cboId.Text));
+
+                cboId.Items.Clear();
+                cboId.Text = "";
+                txtNom.Clear();
+                txtNom.Text = "";
+                cboId.Refresh();
+                txtNom.Refresh();
+
+                if (cboId.Text == "") txtNom.ResetText();
+                foreach (Client client in Client.collClasseClient) cboId.Items.Add(client.Id);
+
+
+            }
+            
+          
+                  
+        }
     }
 }
