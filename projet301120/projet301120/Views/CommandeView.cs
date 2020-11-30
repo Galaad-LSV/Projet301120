@@ -21,6 +21,7 @@ namespace projet301120.Views
         private void CommandeView_Load(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
+            DGVListePizza.Refresh();
             dt.Columns.Add("Id", typeof(int));
             dt.Columns.Add("Nom", typeof(string));
             dt.Columns.Add("Prix", typeof(double));
