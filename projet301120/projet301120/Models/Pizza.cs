@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet301120.Models
 {
-    class Pizza
+    public class Pizza
     {
         #region Attributs
         #endregion

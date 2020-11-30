@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Composant.cs" />
+    <Compile Include="Models\Emporter.cs" />
     <Compile Include="Models\Pizza.cs" />
+    <Compile Include="Models\SurPlace.cs" />
     <Compile Include="Views\Accueil.cs">
       <SubType>Form</SubType>
     </Compile>

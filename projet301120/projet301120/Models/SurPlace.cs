@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace projet301120.Models
 {
-    public class Composant
+    public class SurPlace
     {
         #region Attributs
         #endregion
