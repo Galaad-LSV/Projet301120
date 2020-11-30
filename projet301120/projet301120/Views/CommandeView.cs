@@ -45,14 +45,6 @@ namespace projet301120.Views
             c2.LesCommandes.Add(co2);
             c2.LesCommandes.Add(co3);
             c1.LesCommandes.Add(co4);
-            co1.LesPizza.Add(p1);
-            co1.LesPizza.Add(p4);
-            co2.LesPizza.Add(p3);
-            co2.LesPizza.Add(p2);
-            co2.LesPizza.Add(p1);
-            co3.LesPizza.Add(p4);
-            co4.LesPizza.Add(p2);
-            co4.LesPizza.Add(p3);
             p1.LesIngredients.Add(i10);
             p1.LesIngredients.Add(i4);
             p2.LesIngredients.Add(i10);
