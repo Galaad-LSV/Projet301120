@@ -41,7 +41,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(77, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 39);
+            this.label1.Size = new System.Drawing.Size(233, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nouveau client";
             // 
@@ -63,6 +63,7 @@
             this.btnRetour.TabIndex = 2;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = true;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // txtNom
             // 

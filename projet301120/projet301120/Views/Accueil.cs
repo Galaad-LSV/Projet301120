@@ -63,10 +63,13 @@ namespace projet301120
             p4.LesIngredients.Add(i2);
             p4.LesIngredients.Add(i11);
 
+            cboId.Refresh();
+
             foreach (Client unClient in Client.collClasseClient)
             {
                 cboId.Items.Add(unClient.Id);
             }
+            
         }
 
         private void cboId_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,7 +100,9 @@ namespace projet301120
 
         private void btnCreer_Click(object sender, EventArgs e)
         {
-
+            ClientCreerViews from1 = new ClientCreerViews();
+            from1.Show();
+            this.Hide();
         }
     }
 }
