@@ -32,10 +32,20 @@ namespace projet301120.Models
         #endregion
 
         #region Methodes
+        /// <summary>
+        /// Prend le nom
+        /// </summary>
+        /// <returns>le nom</returns>
         public string GetNom() 
         { 
             return _nom; 
         }
+
+        /// <summary>
+        /// Savoir l'id du client
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>int</returns>
         public static Client ClientAvecId(int id)
         {
             foreach(Client unClient in Client.collClasseClient)
@@ -47,7 +57,10 @@ namespace projet301120.Models
             }
             return null;
         }
-
+        /// <summary>
+        /// Permet de supprimer le Client
+        /// </summary>
+        /// <param name="leId"></param>
         public static void SupprimerClient(int leId)
         {
             collClasseClient.Remove(ClientAvecId(leId));

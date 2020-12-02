@@ -29,6 +29,7 @@ namespace projet301120
 
             cboId.Refresh();
 
+            //Parcour la collection client et les ajoutes dans comboBox
             foreach (Client unClient in Client.collClasseClient)
             {
                 cboId.Items.Add(unClient.Id);
@@ -38,6 +39,7 @@ namespace projet301120
 
         private void cboId_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //permet de mettre le nom du client en fonction de l'id
             foreach (Client unClient in Client.collClasseClient)
             {
                 if (unClient.Id == cboId.SelectedIndex + 1)
@@ -54,6 +56,11 @@ namespace projet301120
             btnCreer.Show();
             DGVAcheter.Show();
         }
+        /// <summary>
+        /// Permet de retourner les commandes en fonction du client
+        /// </summary>
+        /// <param name="param"></param>
+        /// <returns>lesCommandes</returns>
         public Client GetClient(string param)
         {
             Client lescommandes = null;
@@ -122,14 +129,22 @@ namespace projet301120
                 cboId.Refresh();
                 txtNom.Refresh();
 
-                if (cboId.Text == "") txtNom.ResetText();
-                foreach (Client client in Client.collClasseClient) cboId.Items.Add(client.Id);
+                if (cboId.Text == "")
+                {
+                    txtNom.ResetText();
+
+                    foreach (Client client in Client.collClasseClient)
+                    {
+                        cboId.Items.Add(client.Id);
+                    }
+                }
 
 
+            }    
+            else
+            {
+                MessageBox.Show("Il reste encore des commandes");
             }
-            
-          
-                  
         }
     }
 }

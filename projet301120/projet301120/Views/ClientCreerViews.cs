@@ -19,9 +19,34 @@ namespace projet301120.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Ajouter un nouveau client
+        /// Ajout automatique de l'id et recupère le texte dans texteBox Nom
+        /// </summary>
+
+ 
         private void btnAjout_Click(object sender, EventArgs e)
-        {
-            new Client(GestionId.GetNouvelIndexBox(),txtNom.Text);            
+        {       
+            try
+            {
+                if(txtNom.Text == "")
+                {
+                    MessageBox.Show("Il faut écrire un nom");
+                }
+                else
+                {
+                    new Client(GestionId.GetNouvelIndexBox(), txtNom.Text);
+                    MessageBox.Show("Le client a été créé");
+                    this.Close();
+                    Form1 form1 = new Form1();
+                    form1.Show();
+                }
+                
+            }
+            catch
+            {
+                MessageBox.Show("Erreur");
+            }
         }
 
         private void btnRetour_Click(object sender, EventArgs e)
